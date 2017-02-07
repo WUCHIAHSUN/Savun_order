@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edLv"
+        android:hint="新用戶等級:"
+        android:layout_below="@+id/edPassword"
+        android:layout_alignLeft="@+id/edPassword"
+        android:layout_alignStart="@+id/edPassword" />
+
+    <TextView
+        android:text="新增客戶"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="74dp"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edPassword"
+        android:hint="新客戶密碼:"
+        android:layout_below="@+id/edclientID"
+        android:layout_alignLeft="@+id/edclientID"
+        android:layout_alignStart="@+id/edclientID" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/edaddress"
+        android:layout_alignLeft="@+id/edaddress"
+        android:layout_alignStart="@+id/edaddress"
+        android:id="@+id/edPhone"
+        android:hint="電話:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edclientName"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/edclientID"
+        android:layout_alignStart="@+id/edclientID"
+        android:hint="店家名稱:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edclientID"
+        android:hint="新客戶ID:"
+        android:layout_below="@+id/edclientName"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="送出"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/btSend"
+        android:layout_below="@+id/edPhone"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edaddress"
+        android:hint="地址:"
+        android:layout_below="@+id/edLv"
+        android:layout_alignLeft="@+id/edLv"
+        android:layout_alignStart="@+id/edLv" />
+
+</RelativeLayout>

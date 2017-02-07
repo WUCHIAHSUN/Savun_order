@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <TextView
+    android:text="新增產品"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView4"
+    android:layout_marginTop="74dp"
+    android:textStyle="normal|bold"
+    android:textSize="18sp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/edproductID"
+        android:hint="產品ID:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/edproductID"
+        android:layout_alignLeft="@+id/edproductID"
+        android:layout_alignStart="@+id/edproductID"
+        android:id="@+id/edproductName"
+        android:hint="產品名稱:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/edproductName"
+        android:layout_alignRight="@+id/edproductName"
+        android:layout_alignEnd="@+id/edproductName"
+        android:id="@+id/edproductretailPrice"
+        android:hint="產品定價:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/edproductretailPrice"
+        android:layout_alignLeft="@+id/edproductretailPrice"
+        android:layout_alignStart="@+id/edproductretailPrice"
+        android:id="@+id/edproductsalonPrice"
+        android:hint="產品原價:" />
+
+    <Button
+        android:text="送出"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:id="@+id/btsent" />
+
+</RelativeLayout>
